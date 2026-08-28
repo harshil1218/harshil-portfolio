@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Harshil Patel Resume</title>
+<style>
+  @page { size: A4; margin: 9mm 11mm; }
+
+  :root{
+    --ink:#111418;
+    --ink-2:#333A44;
+    --ink-3:#5C6672;
+    --rule:#C9D0D8;
+    --brand:#0B27F0;
+  }
+
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    font-family:"Segoe UI", Calibri, "Helvetica Neue", Arial, sans-serif;
+    font-size:8.3pt;
+    line-height:1.27;
+    color:var(--ink-2);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{ color:var(--brand); text-decoration:none; }
+
+  /* ---------- header ---------- */
+  .name{ font-size:19pt; font-weight:700; letter-spacing:.01em; color:var(--ink); line-height:1.02; margin:0; }
+  .role{ font-size:9.3pt; font-weight:600; color:var(--brand); margin:1.5pt 0 3pt; }
+  .contact{ font-size:7.9pt; color:var(--ink-3); }
+  .contact .sep{ color:var(--rule); padding:0 4pt; }
+
+  /* ---------- sections ---------- */
+  h2{
+    font-size:8.2pt; font-weight:700; text-transform:uppercase; letter-spacing:.11em;
+    color:var(--ink); margin:6pt 0 0; padding-bottom:1.2pt;
+    border-bottom:1pt solid var(--ink);
+  }
+  section{ margin-top:3.2pt; }
+  p{ margin:0; }
+
+  /* ---------- entries ---------- */
+  .entry{ margin-top:3.6pt; page-break-inside:avoid; }
+  .entry:first-child{ margin-top:2.5pt; }
+  .entry__top{ display:flex; justify-content:space-between; align-items:baseline; gap:9pt; }
+  .entry__title{ font-size:8.9pt; font-weight:700; color:var(--ink); }
+  .entry__when{ font-size:7.7pt; color:var(--ink-3); white-space:nowrap; }
+  .entry__sub{ display:flex; justify-content:space-between; gap:9pt; font-size:8pt; font-style:italic; color:var(--ink-3); }
+  .entry__meta{ font-size:7.7pt; color:var(--ink-3); margin-top:.6pt; }
+
+  /* Justified so the right edge is flush. Hyphenation stays off on purpose: a word
+     broken across lines lands in the PDF text as "manufac-turing", which naive ATS
+     keyword matching can miss. */
+  section p, li{ text-align:justify; text-justify:inter-word; hyphens:none; }
+
+  ul{ margin:2pt 0 0; padding-left:10.5pt; }
+  li{ margin-bottom:1.1pt; }
+  li::marker{ color:var(--brand); }
+  b{ color:var(--ink); font-weight:600; }
+
+  /* ---------- skills ---------- */
+  .skills div{ margin-bottom:1.1pt; }
+
+  /* ---------- education ---------- */
+  .edu{ margin-top:2.8pt; page-break-inside:avoid; }
+  .edu__top{ display:flex; justify-content:space-between; align-items:baseline; gap:9pt; }
+  .edu__deg{ font-size:8.6pt; font-weight:700; color:var(--ink); }
+  .edu__sub{ display:flex; justify-content:space-between; gap:9pt; font-size:8pt; font-style:italic; color:var(--ink-3); }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1 class="name">Harshil Patel</h1>
+    <div class="role">Full Stack Developer</div>
+    <div class="contact">
+      <span>+91 93272 63634</span><span class="sep">|</span>
+      <a href="mailto:harshil180704@gmail.com">harshil180704@gmail.com</a><span class="sep">|</span>
+      <a href="https://harshil.dev">harshil.dev</a><span class="sep">|</span>
+      <a href="https://www.linkedin.com/in/harshil-patel-968078373-gec-ldit-it-dte/">LinkedIn</a><span class="sep">|</span>
+      <a href="https://github.com/harshil1218">GitHub</a><span class="sep">|</span>
+      <span>Ahmedabad, India</span>
+    </div>
+  </header>
+
+  <h2>Summary</h2>
+  <section>
+    <p>
+      Full stack developer with two and a half years of production experience on React, Next.js, Node.js,
+      Express and MongoDB. I like working across a whole feature: the database, the API, and the screen that uses
+      it. Six of those months went into a pharmaceutical manufacturing ERP, where I worked on the masters,
+      inventory, production, quality control and accounting modules. I design directly in Tailwind and CSS as I
+      build, so what gets reviewed is close to what ships.
+    </p>
+  </section>
+
+  <h2>Skills</h2>
+  <section class="skills">
+    <div><b>Languages:</b> JavaScript (ES6+), HTML, CSS, C</div>
+    <div><b>Frontend:</b> React.js, Next.js, Tailwind CSS, SCSS, Responsive UI, Design in code</div>
+    <div><b>Backend:</b> Node.js, Express.js, REST APIs, JWT authentication, Middleware</div>
+    <div><b>Database:</b> MongoDB, Mongoose, MySQL, Schema design, Aggregation</div>
+    <div><b>Integrations &amp; tools:</b> Razorpay, Stripe, Google OAuth, Socket.io, Nodemailer, Tally Prime, Git, GitHub, Postman, Vercel, Puppeteer</div>
+    <div><b>Media:</b> CapCut, Canva, Filmora</div>
+  </section>
+
+  <h2>Experience</h2>
+  <section>
+
+    <div class="entry">
+      <div class="entry__top">
+        <span class="entry__title">Full Stack Developer</span>
+        <span class="entry__when">Oct 2025 &ndash; Aug 2026</span>
+      </div>
+      <div class="entry__sub"><span>Zyden IT Solutions</span><span>Gandhinagar, India</span></div>
+      <ul>
+        <li>Worked on full-stack applications end to end, from the database schema and REST APIs through to the
+          finished responsive interface.</li>
+        <li>Helped build several large modules of an enterprise ERP in an industry I had never worked in,
+          researching the domain myself before designing the data model and the screens.</li>
+        <li>Wrote logic where correctness really matters, including balanced accounting ledgers, batch-level stock
+          movement, and quality checks that stop unusable material moving further down the line.</li>
+        <li>Built a one-click sync that copies accounting entries from the app into Tally Prime, created printable
+          PDF reports from templates, added dashboards to admin panels, and fixed problems reported by real users.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__top">
+        <span class="entry__title">Full Stack Developer Intern</span>
+        <span class="entry__when">Apr 2025 &ndash; Sep 2025</span>
+      </div>
+      <div class="entry__sub"><span>Zyden IT Solutions</span><span>Gandhinagar, India</span></div>
+      <ul>
+        <li>Learned the whole JavaScript stack on live client work instead of tutorials: React, Next.js, Tailwind,
+          Node.js, Express, MongoDB and MySQL.</li>
+        <li>Helped deliver customer-facing storefronts, admin panels and the APIs behind them, covering catalogue,
+          cart, payments, authentication, delivery tracking and order management, and designed the interfaces as
+          well as building them.</li>
+        <li>Worked to client deadlines and picked up debugging, testing, code review and Git workflow in a team.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <h2>Projects</h2>
+  <section>
+
+    <div class="entry">
+      <div class="entry__top">
+        <span class="entry__title">TechCure</span>
+        <span class="entry__when">2025 &ndash; 2026</span>
+      </div>
+      <div class="entry__meta">Pharmaceutical Manufacturing ERP &middot; React.js &middot; Node.js &middot; Express.js &middot; MongoDB &middot; Puppeteer &middot; Tally Prime</div>
+      <ul>
+        <li>Worked on the complete <b>Masters</b> area, covering products, items, raw and packing materials,
+          formulas, parties, employees, HSN, TDS and QC monograms.</li>
+        <li>Helped build <b>Inventory and Purchase</b>: supplier enquiries, purchase orders, goods receipt, stock
+          adjustment and store-location tracking, with a movement trail kept behind every batch.</li>
+        <li>Worked on the <b>Production</b> chain, including planning that reserves stock for earlier-dated plans
+          and names the shortfall materials before a batch starts, then raw-material issue, post-production,
+          packing-material issue and batch clearing.</li>
+        <li>Contributed to <b>Quality Control</b>, where new stock stays blocked until its test report is
+          approved. Blocked stock cannot be used in production or sold, and approving the report frees it
+          automatically.</li>
+        <li>Helped build the <b>Accounts</b> module on a double-entry engine, where every voucher posts balanced
+          debit and credit legs by itself, so the trial balance and balance sheet always reconcile.</li>
+        <li>Took part in adding <b>batch-level stock tracking</b> and <b>expiry tracking</b>, a worklist of
+          unusable stock, the <b>BMR report</b>, and a <b>Tally Prime sync</b> that copies every accounting entry
+          from the app into Tally at the click of a button, without creating duplicates.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__top">
+        <span class="entry__title">House of Fashion</span>
+        <span class="entry__when">2025</span>
+      </div>
+      <div class="entry__meta">Fashion e-commerce &middot; Next.js &middot; React.js &middot; Node.js &middot; Express.js &middot; MongoDB &middot; Razorpay &middot; <a href="https://www.houseoffashion.co.in/">houseoffashion.co.in</a></div>
+      <ul>
+        <li>Worked across all three applications, the customer storefront, the admin panel and the API behind
+          them, and helped with the interface design.</li>
+        <li>Helped build the product catalogue, where one product can come in several sizes and colours and each
+          combination keeps its own stock, along with wishlist, ratings, discount coupons and delivery charges.</li>
+        <li>Worked on order tracking that shows each stage, and let customers cancel, return or replace an order
+          themselves with a refund record kept against it, plus Google sign-in with email OTP and Razorpay
+          checkout.</li>
+        <li>Contributed to the admin dashboard with its sales charts, image cropping for product photos, manual
+          invoicing and credit notes.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <h2>Education</h2>
+  <section>
+    <div class="edu">
+      <div class="edu__top">
+        <span class="edu__deg">B.E. in Information Technology</span>
+        <span class="entry__when">2022 &ndash; 2026</span>
+      </div>
+      <div class="edu__sub"><span>L. D. College of Engineering, Ahmedabad</span><span>CGPA: 8.84 / 10</span></div>
+    </div>
+    <div class="edu">
+      <div class="edu__top">
+        <span class="edu__deg">Higher Secondary Certificate</span>
+        <span class="entry__when">2021 &ndash; 2022</span>
+      </div>
+      <div class="edu__sub"><span>M. M. Vasa Primary and High School, Ahmedabad</span><span>Percentage: 80.76%</span></div>
+    </div>
+  </section>
+
+  <h2>Languages</h2>
+  <section>
+    <p>English &nbsp;&middot;&nbsp; Hindi &nbsp;&middot;&nbsp; Gujarati</p>
+  </section>
+
+</body>
+</html>

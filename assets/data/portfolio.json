@@ -1,0 +1,208 @@
+{
+  "profile": {
+    "name": "Harshil",
+    "wordmark": { "name": "harshil", "tld": ".dev" },
+    "role": "Full-stack developer",
+    "location": "Ahmedabad, IN",
+    "tagline": "I build web apps from the database up to the screen. Two and a half years of it so far, mostly on things real customers use every day.",
+    "portrait": "/projects/portrait.jpg",
+    "github": "https://github.com/harshil1218",
+    "linkedin": "https://www.linkedin.com/in/harshil-patel-968078373-gec-ldit-it-dte/",
+    "cv": "/harshil-patel-cv.pdf"
+  },
+
+  "timeSplit": [
+    { "label": "Front end", "value": 45 },
+    { "label": "Back end & APIs", "value": 40 },
+    { "label": "Interface design", "value": 15 }
+  ],
+
+  "stats": [
+    { "value": "4", "label": "Projects built" },
+    { "value": "8", "label": "Apps built" },
+    { "value": "2.5 yrs", "label": "Writing code" }
+  ],
+
+  "about": [
+    "I'm Harshil, a developer in Ahmedabad who likes understanding the full picture — from where the data comes from to how it appears on screen. That's what led me to full-stack development.",
+    "I'm comfortable owning a feature end-to-end: shaping data, building APIs, and creating the UI. I've worked with real-world challenges like auth, payments, uploads, and unpredictable state.",
+    "Most of my learning has come from real deadlines, so I adapt quickly to unfamiliar codebases. I also design as I build, turning rough ideas into polished, working screens without waiting for handoffs."
+  ],
+
+  "ticker": [
+    ["React", "react"], ["Next.js", "nextjs"], ["JavaScript", "javascript"],
+    ["Node.js", "nodejs"], ["Express", "express"], ["MongoDB", "mongodb"],
+    ["MySQL", "mysql"], ["Tailwind CSS", "tailwind"], ["Socket.io", "socketio"],
+    ["Razorpay", "razorpay"], ["Stripe", "stripe"], ["Git", "git"],
+    ["Postman", "postman"], ["Canva", "canva"], ["CapCut", "capcut"]
+  ],
+
+  "expertise": [
+    {
+      "title": "Web Development",
+      "copy": "I build the front end of most things I work on. Storefronts in Next.js, admin panels in React, and all the routing and state that goes with them.",
+      "tags": ["React", "Next.js", "JavaScript", "Tailwind"],
+      "level": 4,
+      "levelLabel": "Core",
+      "glyph": "globe"
+    },
+    {
+      "title": "Software Development",
+      "copy": "The server side. I design the database, write the API, handle login and file uploads, and make sure the logic behind each screen is right.",
+      "tags": ["Node.js", "Express", "MongoDB", "REST"],
+      "level": 4,
+      "levelLabel": "Core",
+      "glyph": "terminal"
+    },
+    {
+      "title": "Systems & Integration",
+      "copy": "Making two systems talk to each other. Payment gateways, Google sign-in, email, live order updates, and a sync that pushes accounting entries straight into Tally Prime.",
+      "tags": ["Razorpay", "Stripe", "OAuth", "Tally sync"],
+      "level": 3,
+      "levelLabel": "Working",
+      "glyph": "nodes"
+    },
+    {
+      "title": "UI / UX Design",
+      "copy": "I design in the browser instead of in Figma. Layout, spacing and how a page behaves on a small screen all get worked out in Tailwind and CSS while I build.",
+      "tags": ["Tailwind", "CSS", "Design in code"],
+      "level": 3,
+      "levelLabel": "Working",
+      "glyph": "layout"
+    },
+    {
+      "title": "Video Editing",
+      "copy": "Short videos and product clips. Cutting, pacing, captions and a bit of motion. I'm decent at it rather than an expert.",
+      "tags": ["CapCut", "Canva", "Filmora"],
+      "level": 2,
+      "levelLabel": "Intermediate",
+      "glyph": "film"
+    }
+  ],
+
+  "projects": [
+    {
+      "index": "01",
+      "name": "House of Fashion",
+      "url": "https://www.houseoffashion.co.in/",
+      "host": "houseoffashion.co.in",
+      "shot": "/projects/house-of-fashion.jpg",
+      "shotSize": [1700, 4858],
+      "featured": true,
+      "badges": ["Featured", "E-commerce", "3-tier"],
+      "copy": "A clothing store with Google sign-in, store locator maps and order tracking. Customers can cancel, return or replace an order themselves. I did the design, the site, the admin panel with its dashboard, and the API behind both.",
+      "stack": ["Next.js", "React", "Node", "MongoDB", "Razorpay"],
+      "scope": "Frontend + Backend"
+    },
+    {
+      "index": "02",
+      "name": "Fortune Organics",
+      "url": "https://www.fortuneorganics.in/",
+      "host": "fortuneorganics.in",
+      "shot": "/projects/fortune-organics.jpg",
+      "shotSize": [1300, 2931],
+      "featured": false,
+      "badges": ["E-commerce", "3-tier"],
+      "copy": "An organic grocery store. Catalogue, cart, Razorpay payments with cash on delivery, and delivery tracking so customers can see where their order is. I designed it, built the site and the admin dashboard, and wrote the API.",
+      "stack": ["Next.js", "Node", "MongoDB", "Razorpay"],
+      "scope": "Frontend + Backend"
+    },
+    {
+      "index": "03",
+      "name": "Aerovvi",
+      "url": "https://www.aerovvitravel.com/",
+      "host": "aerovvitravel.com",
+      "shot": "/projects/aerovvi.jpg",
+      "shotSize": [1300, 4216],
+      "featured": false,
+      "badges": ["Travel"],
+      "copy": "A travel site for tour packages. Destination pages, package browsing, date pickers for trip dates, and a map for each location. Built in Next.js and Tailwind.",
+      "stack": ["Next.js", "Tailwind", "Leaflet"],
+      "scope": "Frontend"
+    },
+    {
+      "index": "04",
+      "name": "AM Hygiene",
+      "url": "https://www.amhygiene.co.in/",
+      "host": "amhygiene.co.in",
+      "shot": "/projects/am-hygiene.jpg",
+      "shotSize": [1300, 3046],
+      "featured": false,
+      "badges": ["Design"],
+      "copy": "A hygiene products site where the design was my job. I did the layout, type and spacing, built it in Next.js and Tailwind, and added the contact form.",
+      "stack": ["Next.js", "Tailwind", "UI design"],
+      "scope": "Design + Frontend"
+    }
+  ],
+
+  "stack": [
+    {
+      "layer": "Front end",
+      "soft": false,
+      "tools": [["React", "react"], ["Next.js", "nextjs"], ["JavaScript", "javascript"], ["HTML & CSS", "html5"], ["Tailwind CSS", "tailwind"]]
+    },
+    {
+      "layer": "Back end",
+      "soft": false,
+      "tools": [["Node.js", "nodejs"], ["Express", "express"], ["REST APIs", "api"], ["JWT auth", "jwt"], ["Socket.io", "socketio"]]
+    },
+    {
+      "layer": "Data & tooling",
+      "soft": false,
+      "tools": [["MongoDB", "mongodb"], ["MySQL", "mysql"], ["Mongoose", "mongoose"], ["Git & GitHub", "github"], ["Postman", "postman"]]
+    },
+    {
+      "layer": "Services",
+      "soft": false,
+      "tools": [["Razorpay", "razorpay"], ["Stripe", "stripe"], ["Google OAuth", "google"], ["Nodemailer", "mail"], ["Tally Prime", "ledger"]]
+    },
+    {
+      "layer": "Media",
+      "soft": false,
+      "tools": [["CapCut", "capcut"], ["Canva", "canva"], ["Filmora", "video"]]
+    },
+    {
+      "layer": "Learning next",
+      "soft": true,
+      "tools": [["TypeScript", "typescript"], ["PostgreSQL", "postgresql"], ["Testing", "test"], ["Docker", "docker"], ["DevOps", "devops"], ["AI", "ai"], ["Advanced video editing", "video"]]
+    }
+  ],
+
+  "journey": [
+    {
+      "period": "2022 — Jun 2026",
+      "title": "B.E. Information Technology",
+      "org": "LD College of Engineering, Ahmedabad · CGPA 8.84",
+      "copy": [
+        "I worked through most of third and fourth year. The internship, then a full-time job, both ran alongside classes. So I never did clubs or committees, but I was writing code real people used while I was still a student."
+      ]
+    },
+    {
+      "period": "Apr — Sep 2025",
+      "title": "Developer Intern",
+      "org": "Zyden IT Solutions · Internship",
+      "copy": [
+        "This is where I learned to build properly. HTML, CSS, JavaScript, React, Next.js, Tailwind, Node, MongoDB and MySQL, all picked up on real client work instead of tutorials. Three projects went out in six months.",
+        "I designed AM Hygiene and built its contact form. On Fortune Organics I did the design, the backend, and an admin panel with delivery tracking. On House of Fashion I did all of it: the design, the site, the admin panel and the API, plus order tracking and letting customers cancel, return or replace an order themselves."
+      ]
+    },
+    {
+      "period": "Oct 2025 — Aug 2026",
+      "title": "Full-stack Developer",
+      "org": "Zyden IT Solutions · Full-time",
+      "copy": [
+        "I built 99 Spices from scratch. Order and food tracking, table booking, pre-orders, and an admin side where staff manage orders and see a dashboard with profit, loss and the numbers that matter. All three admin panels I worked on got that dashboard: 99 Spices, Fortune Organics and House of Fashion.",
+        "Then Tech-Cure, a pharma manufacturing ERP, from day one. I knew nothing about pharma when I started. My project leader, Dhruvi Patel, pushed me to go and research the domain properly, and that is what made everything after it possible.",
+        "I built the masters, the inventory and production modules, QC and the BMR reports, and the whole accounting engine. Every entry splits itself into balanced parts, so the trial balance and the balance sheet always match. Stock tracking follows every issue and receipt down to the smallest one. And the Tally sync: one click and every entry in Tech-Cure shows up in Tally Prime."
+      ]
+    },
+    {
+      "period": "Sep 2026 —",
+      "title": "Looking for what's next",
+      "org": "Ahmedabad · On-site, remote or project work",
+      "copy": [
+        "My degree finished in June and my job at Zyden wrapped up in August, so I'm free from September. I'm looking for a team where I get to build whole features rather than pick up small tickets. Happy to take on project work alongside that."
+      ]
+    }
+  ]
+}
