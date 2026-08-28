@@ -9,10 +9,13 @@ const themeScript = `
 (function(){
   try {
     var t = localStorage.getItem("hd-theme");
-    if (t === "dark" || t === "light") {
-      document.documentElement.setAttribute("data-theme", t);
-    }
-  } catch (e) {}
+    document.documentElement.setAttribute(
+      "data-theme",
+      t === "dark" || t === "light" ? t : "light"
+    );
+  } catch (e) {
+    document.documentElement.setAttribute("data-theme", "light");
+  }
 })();
 `;
 

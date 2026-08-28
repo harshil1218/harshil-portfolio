@@ -4,7 +4,7 @@ import React from "react";
 const MetaData = ({
   title = "harshil.dev",
   description = "Harshil — full-stack developer in Ahmedabad. React, Next.js, Node and MongoDB.",
-  url = "https://harshil.dev",
+  url = "https://harshil-portfolio-mu.vercel.app",
   image = "/projects/portrait.jpg",
 }) => (
   <Head>
