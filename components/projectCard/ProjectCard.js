@@ -5,9 +5,8 @@ import Image from "next/image";
  * A live site shown as a browser window. At rest you see the top of the page;
  * on hover the whole screenshot scrolls past.
  *
- * The whole card links out via an absolutely positioned overlay rather than
- * wrapping everything in an <a> — nesting the More button inside a link is
- * invalid markup, and tapping it would navigate instead of expanding.
+ * Only the "Visit site" link in the footer navigates — the card body stays
+ * inert so text can be selected and More can expand without surprises.
  */
 const ProjectCard = ({ project, wide }) => {
   const [open, setOpen] = useState(false);
@@ -15,14 +14,6 @@ const ProjectCard = ({ project, wide }) => {
 
   return (
     <article className={`card rv${wide ? " card--wide" : ""}`}>
-      <a
-        className="card__link"
-        href={project.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`Open ${project.name} in a new tab`}
-      />
-
       <div className="card__media">
         <div className="shotwrap">
           <div className="shotbar">

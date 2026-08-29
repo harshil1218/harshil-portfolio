@@ -177,9 +177,6 @@
 .card__foot .mono,.card__foot .go{font-size:.625rem;letter-spacing:.07em;white-space:nowrap}
 .card__foot .go{display:flex;align-items:center;gap:.5rem;color:var(--ink-3);transition:color .3s var(--ease)}
 .card:hover .card__foot .go{color:var(--accent)}
-.card__link{position:absolute;inset:0;z-index:1}
-@media (pointer:coarse){.card__link{display:none}}
-.card__foot .go{position:relative;z-index:2}
 .more{position:relative;z-index:3}
 
 /* ============================================================

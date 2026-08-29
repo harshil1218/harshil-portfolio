@@ -126,7 +126,7 @@
       "url": "https://www.amhygiene.co.in/",
       "host": "amhygiene.co.in",
       "shot": "/projects/am-hygiene.jpg",
-      "shotSize": [1300, 3046],
+      "shotSize": [1300, 3730],
       "featured": false,
       "badges": ["Design"],
       "copy": "A hygiene products site where the design was my job. I did the layout, type and spacing, built it in Next.js and Tailwind, and added the contact form.",
