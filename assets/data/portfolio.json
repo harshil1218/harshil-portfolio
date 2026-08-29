@@ -164,7 +164,7 @@
     {
       "layer": "Learning next",
       "soft": true,
-      "tools": [["TypeScript", "typescript"], ["PostgreSQL", "postgresql"], ["Testing", "test"], ["Docker", "docker"], ["DevOps", "devops"], ["AI", "ai"], ["Advanced video editing", "video"]]
+      "tools": [["TypeScript", "typescript"], ["PostgreSQL", "postgresql"], ["Testing", "test"], ["Docker", "docker"], ["DevOps", "devops"], ["AIML", "ai"], [".NET", "dotnet"], ["Advanced video editing", "video"]]
     }
   ],
 
