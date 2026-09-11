@@ -10,25 +10,35 @@ import Image from "next/image";
  */
 const ProjectCard = ({ project, wide }) => {
   const [open, setOpen] = useState(false);
-  const [w, h] = project.shotSize;
 
   return (
     <article className={`card rv${wide ? " card--wide" : ""}`}>
       <div className="card__media">
-        <div className="shotwrap">
-          <div className="shotbar">
-            <span className="dots"><i /><i /><i /></span>
-            <b>{project.host}</b>
+        {project.confidential ? (
+          <div className="nda">
+            <div className="plate" />
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <rect x="4.5" y="10.5" width="15" height="10" rx="2" />
+              <path d="M8 10.5V8a4 4 0 0 1 8 0v2.5M12 14.8v2" />
+            </svg>
+            <span className="mono">Confidential &middot; no public link or screenshots</span>
           </div>
-          <div className="shotview">
-            <Image
-              src={project.shot}
-              alt={`Full-page screenshot of the ${project.name} site`}
-              width={w}
-              height={h}
-            />
+        ) : (
+          <div className="shotwrap">
+            <div className="shotbar">
+              <span className="dots"><i /><i /><i /></span>
+              <b>{project.host}</b>
+            </div>
+            <div className="shotview">
+              <Image
+                src={project.shot}
+                alt={`Full-page screenshot of the ${project.name} site`}
+                width={project.shotSize[0]}
+                height={project.shotSize[1]}
+              />
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       <div className={`card__body${open ? " open" : ""}`}>
@@ -60,14 +70,18 @@ const ProjectCard = ({ project, wide }) => {
         <span className="mono">
           {project.index} &middot; {project.scope}
         </span>
-        <a
-          className="go mono"
-          href={project.url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit site <span className="arw">&#8599;</span>
-        </a>
+        {project.confidential ? (
+          <span className="go go--off mono">Private &middot; NDA</span>
+        ) : (
+          <a
+            className="go mono"
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit site <span className="arw">&#8599;</span>
+          </a>
+        )}
       </div>
     </article>
   );

@@ -46,7 +46,7 @@ const Hero = () => {
             ))}
             <div className="row readout__total">
               <span className="mono">{data.projects.length} products</span>
-              <b className="mono">8 APPS</b>
+              <b className="mono">10 APPS</b>
             </div>
           </div>
         </div>
