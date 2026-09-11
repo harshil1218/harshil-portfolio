@@ -5,8 +5,7 @@ import ProjectCard from "@/components/projectCard/ProjectCard";
 
 const Work = () => {
   const featured = data.projects.find((p) => p.featured);
-  const rest = data.projects.filter((p) => !p.featured && !p.confidential);
-  const confidential = data.projects.filter((p) => p.confidential);
+  const rest = data.projects.filter((p) => !p.featured);
 
   return (
     <section className="sect" id="work">
@@ -32,9 +31,6 @@ const Work = () => {
                 <ProjectCard project={project} key={project.name} />
               ))}
             </div>
-            {confidential.map((project) => (
-              <ProjectCard project={project} wide key={project.name} />
-            ))}
           </div>
         </div>
       </div>
