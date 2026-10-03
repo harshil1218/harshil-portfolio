@@ -469,21 +469,13 @@
       ]
     },
     {
-      "period": "Oct 2025 — Aug 2026",
+      "period": "Oct 2025 — Current",
       "title": "Full-stack Developer",
       "org": "Zyden IT Solutions · Full-time",
       "copy": [
         "I built 99 Spices from scratch. Order and food tracking, table booking, pre-orders, and an admin side where staff manage orders and see a dashboard with profit, loss and the numbers that matter. All three admin panels I worked on got that dashboard: 99 Spices, Fortune Organics and House of Fashion.",
         "Then Tech-Cure, a pharma manufacturing ERP, from day one. I knew nothing about pharma when I started. My project leader, Dhruvi Patel, pushed me to go and research the domain properly, and that is what made everything after it possible.",
         "I built the masters, the inventory and production modules, QC and the BMR reports, and the whole accounting engine. Every entry splits itself into balanced parts, so the trial balance and the balance sheet always match. Stock tracking follows every issue and receipt down to the smallest one. And the Tally sync: one click and every entry in Tech-Cure shows up in Tally Prime."
-      ]
-    },
-    {
-      "period": "Sep 2026 —",
-      "title": "Looking for what's next",
-      "org": "Ahmedabad · On-site, remote or project work",
-      "copy": [
-        "My degree finished in June and my job at Zyden wrapped up in August, so I'm free from September. I'm looking for a team where I get to build whole features rather than pick up small tickets. Happy to take on project work alongside that."
       ]
     }
   ]
