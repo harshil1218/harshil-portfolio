@@ -3,77 +3,66 @@
 <head>
 <meta charset="utf-8">
 <title>Harshil Patel Resume</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<!-- CMU Serif: the Computer Modern face LaTeX resumes use (OFL), pinned -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern@0.1.3/cmu-serif.css">
 <style>
-  @page { size: A4; margin: 7.5mm 11mm; }
+  @page { size: A4; margin: 7mm 11mm; }
 
   :root{
-    --ink:#111418;
-    --ink-2:#333A44;
-    --ink-3:#5C6672;
-    --rule:#C9D0D8;
-    --brand:#0B27F0;
-    --fs:9.2pt;
+    --ink:#000;
+    --fs:9.4pt;
   }
 
   *{ box-sizing:border-box; }
   html,body{ margin:0; padding:0; }
   body{
-    font-family:"STIX Two Text", Cambria, Georgia, "Times New Roman", serif;
+    font-family:"CMU Serif", "Latin Modern Roman", Cambria, Georgia, serif;
+    font-weight:500;
     font-size:var(--fs);
-    line-height:1.25;
-    color:var(--ink-2);
+    line-height:1.2;
+    color:var(--ink);
     -webkit-font-smoothing:antialiased;
   }
-  a{ color:var(--brand); text-decoration:none; }
+  a{ color:var(--ink); text-decoration:none; }
+  b{ font-weight:700; }
 
   /* ---------- header ---------- */
-  .name{ font-size:20pt; font-weight:700; letter-spacing:.01em; color:var(--ink); line-height:1.02; margin:0; }
-  .role{ font-size:10pt; font-weight:600; color:var(--brand); margin:1.5pt 0 3pt; }
-  .contact{ font-size:8.6pt; color:var(--ink-3); }
-  .contact .sep{ color:var(--rule); padding:0 4pt; }
+  header{ text-align:center; }
+  .name{ font-size:20pt; font-weight:700; line-height:1.05; margin:0; }
+  .role{ font-size:10.4pt; margin:2pt 0 2.5pt; }
+  .contact{ font-size:9pt; }
+  .contact .sep{ padding:0 4.5pt; }
 
-  /* ---------- sections ---------- */
+  /* ---------- sections: title case, bold, a rule underneath ---------- */
   h2{
-    font-size:8.8pt; font-weight:700; text-transform:uppercase; letter-spacing:.11em;
-    color:var(--ink); margin:5.4pt 0 0; padding-bottom:1.2pt;
-    border-bottom:1pt solid var(--ink);
+    font-size:11.5pt; font-weight:700; margin:4.6pt 0 2pt; padding-bottom:.8pt;
+    border-bottom:.6pt solid var(--ink); line-height:1.15;
   }
-  section{ margin-top:3.1pt; }
-  p{ margin:0; }
-
-  /* ---------- entries ---------- */
-  .entry{ margin-top:3.4pt; page-break-inside:avoid; }
-  .entry:first-child{ margin-top:2.5pt; }
-  .entry__top{ display:flex; justify-content:space-between; align-items:baseline; gap:9pt; }
-  .entry__title{ font-size:9.8pt; font-weight:700; color:var(--ink); }
-  .entry__when{ font-size:8.4pt; color:var(--ink-3); white-space:nowrap; }
-  .entry__sub{ display:flex; justify-content:space-between; gap:9pt; font-size:8.8pt; font-style:italic; color:var(--ink-3); }
-  .entry__meta{ font-size:8.4pt; color:var(--ink-3); margin-top:.6pt; }
-
-  /* Justified for a flush right edge; hyphenation off so ATS text stays clean. */
-  section p, li{ text-align:justify; text-justify:inter-word; hyphens:none; }
-
-  ul{ margin:2pt 0 0; padding-left:11pt; }
-  li{ margin-bottom:1pt; }
-  li::marker{ color:var(--brand); }
-  b{ color:var(--ink); font-weight:600; }
+  p{ margin:0; text-align:justify; text-justify:inter-word; hyphens:none; }
 
   /* ---------- skills ---------- */
-  .skills div{ margin-bottom:1.3pt; }
+  .skills div{ margin-bottom:.9pt; }
 
-  /* ---------- education ---------- */
-  .edu{ margin-top:3pt; page-break-inside:avoid; }
-  .edu__top{ display:flex; justify-content:space-between; align-items:baseline; gap:9pt; }
-  .edu__deg{ font-size:9.4pt; font-weight:700; color:var(--ink); }
-  .edu__sub{ display:flex; justify-content:space-between; gap:9pt; font-size:8.8pt; font-style:italic; color:var(--ink-3); }
+  /* ---------- entries ---------- */
+  .entry{ margin-top:2.4pt; page-break-inside:avoid; }
+  h2 + .entry{ margin-top:0; }
+  .entry__top,
+  .entry__sub{ display:flex; justify-content:space-between; align-items:baseline; gap:10pt; }
+  .entry__top{ font-size:10pt; font-weight:700; }
+  .entry__sub{ font-style:italic; }
+  .entry__meta{ font-style:italic; }
+
+  /* en-dash bullets with a hanging indent, like the LaTeX itemize */
+  ul{ list-style:none; margin:1.2pt 0 0; padding-left:15pt; }
+  li{ position:relative; margin-bottom:.5pt; text-align:justify; text-justify:inter-word; hyphens:none; }
+  li::before{ content:"\2013"; position:absolute; left:-10pt; }
 </style>
 </head>
 <body>
 
   <header>
     <h1 class="name">Harshil Patel</h1>
-    <div class="role">Full Stack Developer</div>
+    <div class="role">Project Manager &middot; Full Stack Developer</div>
     <div class="contact">
       <span>+91 93272 63634</span><span class="sep">|</span>
       <a href="mailto:harshil180704@gmail.com">harshil180704@gmail.com</a><span class="sep">|</span>
@@ -85,136 +74,111 @@
   </header>
 
   <h2>Summary</h2>
-  <section>
-    <p>
-      Full stack developer with two and a half years of production experience on React, Next.js, Node.js,
-      Express and MongoDB. I like working across a whole feature: the database, the API, and the screen that
-      uses it. Six of those months went into a pharmaceutical manufacturing ERP. I design directly in Tailwind
-      and CSS as I build, so what gets reviewed is close to what ships.
-    </p>
-  </section>
+  <p>
+    Project Manager and Full Stack MERN Developer at Zyden IT Solutions, a software company. Managing several
+    projects, including TechCure, Zyden&rsquo;s ERP for pharma manufacturers: researching and planning new features,
+    handing them to the team, and testing every update. Also making product videos and reels with Claude and Remotion.
+  </p>
 
   <h2>Skills</h2>
-  <section class="skills">
-    <div><b>Languages:</b> JavaScript (ES6+), HTML, CSS, C</div>
-    <div><b>Frontend:</b> React.js, Next.js, Tailwind CSS, SCSS, Responsive UI, Design in code</div>
-    <div><b>Backend:</b> Node.js, Express.js, REST APIs, JWT authentication, Middleware</div>
-    <div><b>Database:</b> MongoDB, Mongoose, MySQL, Schema design, Aggregation</div>
-    <div><b>Integrations &amp; tools:</b> Razorpay, Stripe, Google OAuth, Socket.io, Nodemailer, Tally Prime, Git, GitHub, Postman, Vercel, Puppeteer</div>
-    <div><b>Media:</b> CapCut, Canva, Filmora</div>
-  </section>
+  <div class="skills">
+    <div><b>Project Management:</b> Research, Feature Planning, Task Breakdown, Team Coordination, Testing</div>
+    <div><b>Programming Languages:</b> JavaScript (ES6+), HTML, CSS, C</div>
+    <div><b>Frontend:</b> React.js, Next.js, Tailwind CSS, SCSS, Responsive Design</div>
+    <div><b>Backend:</b> Node.js, Express.js, REST APIs, JWT Authentication, Middleware</div>
+    <div><b>Database:</b> MongoDB, Mongoose, MySQL, Schema Design, Aggregation</div>
+    <div><b>Integrations:</b> Razorpay, Stripe, Google OAuth, Socket.io, Nodemailer, Tally Prime</div>
+    <div><b>Content &amp; Marketing:</b> Script Writing, Video Making (Remotion, Claude, CapCut, Canva), SEO and Online Ads (learning)</div>
+    <div><b>Tools &amp; Deployment:</b> Git, GitHub, Postman, Vercel, Puppeteer</div>
+    <div><b>Languages:</b> English, Hindi, Gujarati</div>
+  </div>
 
   <h2>Experience</h2>
-  <section>
 
-    <div class="entry">
-      <div class="entry__top">
-        <span class="entry__title">Full Stack Developer</span>
-        <span class="entry__when">Oct 2025 &ndash; Current</span>
-      </div>
-      <div class="entry__sub"><span>Zyden IT Solutions</span><span>Gandhinagar, India</span></div>
-      <ul>
-        <li>Worked on full-stack applications end to end: database schema, REST APIs and the finished
-          responsive interface.</li>
-        <li>Helped build several large ERP modules in an industry new to me, researching the domain before
-          designing the data models and screens, and wrote logic where correctness matters: balanced ledgers,
-          batch-level stock movement, and quality checks that block unusable material.</li>
-        <li>Built a one-click sync copying accounting entries into Tally Prime, generated PDF reports from
-          templates, added dashboards to admin panels, and fixed issues reported by real users.</li>
-      </ul>
-    </div>
+  <div class="entry">
+    <div class="entry__top"><span>Project Manager</span><span>Oct 2026 &ndash; Present</span></div>
+    <div class="entry__sub"><span>Zyden IT Solutions</span><span>Gandhinagar, India</span></div>
+    <ul>
+      <li>Managing several projects at once, including TechCure, the ERP Zyden makes for pharma manufacturers.</li>
+      <li>Researching what each new feature needs, writing a clear plan, and handing it to the developers.</li>
+      <li>Testing new features and updates before release, and reporting bugs with clear steps to repeat them.</li>
+      <li>Coming up with ideas for product videos and reels, then writing and making them with Claude and Remotion.</li>
+      <li>Learning SEO on live work for AM Hygiene, and running online ad campaigns.</li>
+    </ul>
+  </div>
 
-    <div class="entry">
-      <div class="entry__top">
-        <span class="entry__title">Full Stack Developer Intern</span>
-        <span class="entry__when">Apr 2025 &ndash; Sep 2025</span>
-      </div>
-      <div class="entry__sub"><span>Zyden IT Solutions</span><span>Gandhinagar, India</span></div>
-      <ul>
-        <li>Learned the full JavaScript stack on live client work: React, Next.js, Tailwind, Node.js, Express,
-          MongoDB and MySQL, and helped deliver storefronts, admin panels and their APIs, covering catalogue,
-          cart, payments, authentication, delivery tracking and order management, designing the interfaces too.</li>
-        <li>Worked to client deadlines and picked up debugging, testing, code review and Git workflow in a team.</li>
-      </ul>
-    </div>
+  <div class="entry">
+    <div class="entry__top"><span>Senior Developer</span><span>Mar 2026 &ndash; Sep 2026</span></div>
+    <div class="entry__sub"><span>Zyden IT Solutions</span><span>Gandhinagar, India</span></div>
+    <ul>
+      <li>Worked on the hardest parts of TechCure: production, quality control, BMR reports, accounts and Tally sync.</li>
+    </ul>
+  </div>
 
-  </section>
+  <div class="entry">
+    <div class="entry__top"><span>Full Stack Developer</span><span>Oct 2025 &ndash; Feb 2026</span></div>
+    <div class="entry__sub"><span>Zyden IT Solutions</span><span>Gandhinagar, India</span></div>
+    <ul>
+      <li>Built 99 Spices from scratch: food orders with live tracking, table booking, pre-orders and an admin panel.</li>
+      <li>Added profit and loss dashboards to the admin panels of 99 Spices, Fortune Organics and House of Fashion.</li>
+      <li>Joined TechCure on day one, studied how pharma companies work, and helped build the masters and inventory.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry__top"><span>Full Stack Developer Intern</span><span>Apr 2025 &ndash; Sep 2025</span></div>
+    <div class="entry__sub"><span>Zyden IT Solutions</span><span>Gandhinagar, India</span></div>
+    <ul>
+      <li>Learned the MERN stack on real client work, and helped ship online shops, admin panels and their APIs.</li>
+    </ul>
+  </div>
 
   <h2>Projects</h2>
-  <section>
 
-    <div class="entry">
-      <div class="entry__top">
-        <span class="entry__title">TechCure</span>
-        <span class="entry__when">2025 &ndash; 2026</span>
-      </div>
-      <div class="entry__meta">Pharmaceutical Manufacturing ERP &middot; React.js &middot; Node.js &middot; Express.js &middot; MongoDB &middot; Puppeteer &middot; Tally Prime</div>
-      <ul>
-        <li>Worked on the complete <b>Masters</b> area: products, items, raw and packing materials, formulas,
-          parties, employees, HSN, TDS and QC monograms.</li>
-        <li>Helped build <b>Inventory and Purchase</b> (supplier enquiries, purchase orders, goods receipt, stock
-          adjustment, store-location tracking with a movement trail behind every batch) and the <b>Production</b>
-          chain, from planning that reserves stock for earlier-dated plans and flags shortfall materials, through
-          raw-material issue, post-production, packing-material issue and batch clearing.</li>
-        <li>Contributed to <b>Quality Control</b>, where new stock stays blocked until its test report is approved
-          and approval frees it automatically, and helped build the <b>Accounts</b> module on a double-entry
-          engine, so the trial balance and balance sheet always reconcile.</li>
-        <li>Took part in <b>batch-level stock and expiry tracking</b>, a worklist of unusable stock, the
-          <b>BMR report</b>, and the one-click <b>Tally Prime sync</b> that never creates duplicates.</li>
-      </ul>
-    </div>
+  <div class="entry">
+    <div class="entry__top"><span>TechCure</span><span>2025 &ndash; Present</span></div>
+    <div class="entry__meta">Zyden IT Solutions&rsquo; main product &middot; React.js &middot; Node.js &middot; Express.js &middot; MongoDB &middot; Puppeteer &middot; Tally Prime</div>
+    <ul>
+      <li>ERP software for pharma, nutraceutical and ayurvedic manufacturers, from buying raw material to selling.</li>
+      <li>Worked on the complete <b>Masters</b> (products, raw and packing materials, formulas, parties, HSN, TDS) and
+        helped build <b>Inventory and Purchase</b>: purchase orders, goods receipt, stock adjustment, and a movement
+        history for every batch.</li>
+      <li>Helped build <b>Production</b>, from planning that reserves stock and flags missing material, through
+        material issue, to batch clearing, and <b>Quality Control</b>, which keeps new stock blocked until its test
+        report is approved.</li>
+      <li>Helped build <b>Accounts</b> on double entry, so the trial balance and balance sheet always match, plus the
+        <b>BMR report</b> and a one-click <b>Tally Prime sync</b> that never creates duplicates.</li>
+      <li>Plan, script and make the <b>TechCure video series</b> with Claude and Remotion, like Episode 2 &ldquo;Paracetamol ka rate?&rdquo;</li>
+    </ul>
+  </div>
 
-    <div class="entry">
-      <div class="entry__top">
-        <span class="entry__title">House of Fashion</span>
-        <span class="entry__when">2025</span>
-      </div>
-      <div class="entry__meta">Fashion e-commerce &middot; Next.js &middot; React.js &middot; Node.js &middot; Express.js &middot; MongoDB &middot; Razorpay &middot; <a href="https://www.houseoffashion.co.in/">houseoffashion.co.in</a></div>
-      <ul>
-        <li>Worked across all three applications: the customer storefront, the admin panel and the API behind
-          them, helping with the interface design as well.</li>
-        <li>Helped build the catalogue, where each size-and-colour combination keeps its own stock, plus wishlist,
-          ratings, discount coupons and delivery-charge rules.</li>
-        <li>Worked on staged order tracking with self-service cancel, return and replace (a refund record kept
-          against each), Google sign-in with email OTP, Razorpay checkout, and the admin dashboard with sales
-          charts, image cropping, manual invoicing and credit notes.</li>
-      </ul>
-    </div>
+  <div class="entry">
+    <div class="entry__top"><span>House of Fashion</span><span>2025</span></div>
+    <div class="entry__meta">Fashion e-commerce &middot; Next.js &middot; React.js &middot; Node.js &middot; Express.js &middot; MongoDB &middot; Razorpay &middot; <a href="https://www.houseoffashion.co.in/">houseoffashion.co.in</a></div>
+    <ul>
+      <li>Worked on all three parts: the online shop, the admin panel and the API behind both, including the screen design.</li>
+      <li>Helped build the catalogue, where every size and colour keeps its own stock, plus wishlist, ratings and coupons.</li>
+      <li>Worked on self-service cancel, return and replace, Google sign-in with OTP, Razorpay and the admin dashboard.</li>
+    </ul>
+  </div>
 
-    <div class="entry">
-      <div class="entry__top">
-        <span class="entry__title">Other live websites</span>
-        <span class="entry__when">2025 &ndash; 2026</span>
-      </div>
-      <ul>
-        <li style="text-align:left"><b>Fortune Organics</b> &ndash; <a href="https://www.fortuneorganics.in/">fortuneorganics.in</a><span style="color:#C9D0D8;padding:0 6pt">|</span><b>Aerovvi Travel</b> &ndash; <a href="https://www.aerovvitravel.com/">aerovvitravel.com</a><span style="color:#C9D0D8;padding:0 6pt">|</span><b>AM Hygiene</b> &ndash; <a href="https://www.amhygiene.co.in/">amhygiene.co.in</a></li>
-      </ul>
-    </div>
-
-  </section>
+  <div class="entry">
+    <div class="entry__top"><span>Other Live Websites</span><span>2025 &ndash; 2026</span></div>
+    <ul>
+      <li style="text-align:left"><b>Fortune Organics</b> &ndash; <a href="https://www.fortuneorganics.in/">fortuneorganics.in</a><span class="sep" style="padding:0 6pt">|</span><b>Aerovvi Travel</b> &ndash; <a href="https://www.aerovvitravel.com/">aerovvitravel.com</a><span class="sep" style="padding:0 6pt">|</span><b>AM Hygiene</b> &ndash; <a href="https://www.amhygiene.co.in/">amhygiene.co.in</a></li>
+    </ul>
+  </div>
 
   <h2>Education</h2>
-  <section>
-    <div class="edu">
-      <div class="edu__top">
-        <span class="edu__deg">B.E. in Information Technology</span>
-        <span class="entry__when">2022 &ndash; 2026</span>
-      </div>
-      <div class="edu__sub"><span>L. D. College of Engineering, Ahmedabad</span><span>CGPA: 8.84 / 10</span></div>
-    </div>
-    <div class="edu">
-      <div class="edu__top">
-        <span class="edu__deg">Higher Secondary Certificate</span>
-        <span class="entry__when">2021 &ndash; 2022</span>
-      </div>
-      <div class="edu__sub"><span>M. M. Vasa Primary and High School, Ahmedabad</span><span>Percentage: 80.76%</span></div>
-    </div>
-  </section>
 
-  <h2>Languages</h2>
-  <section>
-    <p>English &nbsp;&middot;&nbsp; Hindi &nbsp;&middot;&nbsp; Gujarati</p>
-  </section>
+  <div class="entry">
+    <div class="entry__top"><span>B.E. in Information Technology</span><span>2022 &ndash; 2026</span></div>
+    <div class="entry__sub"><span>L. D. College of Engineering, Ahmedabad</span><span>CGPA: 8.84 / 10</span></div>
+  </div>
+  <div class="entry">
+    <div class="entry__top"><span>Higher Secondary Certificate</span><span>2021 &ndash; 2022</span></div>
+    <div class="entry__sub"><span>M. M. Vasa Primary and High School, Ahmedabad</span><span>Percentage: 80.76%</span></div>
+  </div>
 
 </body>
 </html>

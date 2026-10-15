@@ -1,9 +1,9 @@
 export const Messages = {
   Contact: {
-    Sent: "Thanks — your message is on its way. I'll reply within a day.",
-    Failed: "That didn't send. Try again, or email me directly.",
+    Sent: "Thanks! Your message has been sent. I'll reply within a day.",
+    Failed: "Your message didn't send. Please try again, or email me directly.",
     Invalid: "Please fix the highlighted fields and try again.",
-    Throttled: "You've just sent a message. Give it a minute before sending another.",
+    Throttled: "You just sent a message. Please wait a minute before sending another.",
   },
   Validation: {
     NameRequired: "Please enter your name",

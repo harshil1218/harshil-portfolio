@@ -8,33 +8,37 @@
     "role": "Full-stack developer",
     "location": "Ahmedabad, IN",
     "tagline": "I build web apps from the database up to the screen. Two and a half years of it so far, mostly on things real customers use every day.",
-    "portrait": "/projects/portrait.jpg",
+    "portrait": "/projects/harshil.jpg",
     "github": "https://github.com/harshil1218",
     "linkedin": "https://www.linkedin.com/in/harshil-patel-968078373-gec-ldit-it-dte/",
     "cv": "/harshil-patel-cv.pdf"
   },
   "timeSplit": [
     {
-      "label": "Front end",
-      "value": 45
+      "label": "Research",
+      "value": 50
     },
     {
-      "label": "Back end & APIs",
-      "value": 40
+      "label": "Content & video",
+      "value": 30
     },
     {
-      "label": "Interface design",
-      "value": 15
+      "label": "Development",
+      "value": 10
+    },
+    {
+      "label": "Testing",
+      "value": 10
     }
   ],
   "stats": [
     {
       "value": "5",
-      "label": "Projects built"
+      "label": "Projects worked on"
     },
     {
       "value": "10",
-      "label": "Apps built"
+      "label": "Apps across them"
     },
     {
       "value": "2.5 yrs",
@@ -44,7 +48,8 @@
   "about": [
     "I'm Harshil, a developer in Ahmedabad who likes understanding the full picture — from where the data comes from to how it appears on screen. That's what led me to full-stack development.",
     "I'm comfortable owning a feature end-to-end: shaping data, building APIs, and creating the UI. I've worked with real-world challenges like auth, payments, uploads, and unpredictable state.",
-    "Most of my learning has come from real deadlines, so I adapt quickly to unfamiliar codebases. I also design as I build, turning rough ideas into polished, working screens without waiting for handoffs."
+    "Most of my learning has come from real deadlines, so I adapt quickly to unfamiliar codebases. I also design as I build, turning rough ideas into polished, working screens without waiting for handoffs.",
+    "Since October 2026 I've also been leading projects at Zyden IT Solutions. I plan new features with the team, test them before release, and create the TechCure video series and our reels."
   ],
   "ticker": [
     [
@@ -136,6 +141,19 @@
       "glyph": "terminal"
     },
     {
+      "title": "Project Management",
+      "copy": "I work out what a new feature should do before it is built, plan it with the team, and test what comes back, new features and updates alike, before it ships.",
+      "tags": [
+        "Research",
+        "Feature planning",
+        "Team handoff",
+        "Testing"
+      ],
+      "level": 4,
+      "levelLabel": "Core",
+      "glyph": "kanban"
+    },
+    {
       "title": "Systems & Integration",
       "copy": "Making two systems talk to each other. Payment gateways, Google sign-in, email, live order updates, and a sync that pushes accounting entries straight into Tally Prime.",
       "tags": [
@@ -161,16 +179,40 @@
       "glyph": "layout"
     },
     {
-      "title": "Video Editing",
-      "copy": "Short videos and product clips. Cutting, pacing, captions and a bit of motion. I'm decent at it rather than an expert.",
+      "title": "Content Creation",
+      "copy": "Scripts and ideas for the TechCure video series, customer videos and reels. I work out what we want to say and how to show it.",
       "tags": [
+        "Scripts",
+        "Ideas",
+        "Reels"
+      ],
+      "level": 3,
+      "levelLabel": "Working",
+      "glyph": "script"
+    },
+    {
+      "title": "Video Editing",
+      "copy": "I make our videos with Claude and Remotion, which builds video from React code. Real TechCure screens, captions and the voice-over are all timed together. CapCut and Canva for quick edits.",
+      "tags": [
+        "Remotion",
+        "Claude",
         "CapCut",
-        "Canva",
-        "Filmora"
+        "Canva"
+      ],
+      "level": 3,
+      "levelLabel": "Working",
+      "glyph": "film"
+    },
+    {
+      "title": "SEO & Ads",
+      "copy": "The newest thing I'm learning. I'm picking up SEO on live work for AM Hygiene, and I've started running ad campaigns, the same way I learned to code: on the job.",
+      "tags": [
+        "SEO",
+        "Ad campaigns"
       ],
       "level": 2,
       "levelLabel": "Intermediate",
-      "glyph": "film"
+      "glyph": "megaphone"
     }
   ],
   "projects": [
@@ -190,7 +232,7 @@
         "E-commerce",
         "3-tier"
       ],
-      "copy": "A clothing store with Google sign-in, store locator maps and order tracking. Customers can cancel, return or replace an order themselves. I did the design, the site, the admin panel with its dashboard, and the API behind both.",
+      "copy": "A clothing store with Google sign-in, store locator maps and order tracking. Customers can cancel, return or replace an order themselves. I worked on the design, the storefront, the admin panel with its dashboard, and the API behind both.",
       "stack": [
         "Next.js",
         "React",
@@ -236,15 +278,15 @@
       ],
       "featured": false,
       "badges": [
-        "Travel"
+        "Travel",
+        "Tour packages"
       ],
-      "copy": "A travel site for tour packages. Destination pages, package browsing, date pickers for trip dates, and a map for each location. Built in Next.js and Tailwind.",
+      "copy": "A website for Aerovvi Travel, a travel agency. I built its Contact Us functionality: the Plan My Trip form, which takes the traveller's name, email, mobile number, destination, preferred date, group size and message.",
       "stack": [
         "Next.js",
-        "Tailwind",
-        "Leaflet"
+        "Tailwind"
       ],
-      "scope": "Frontend"
+      "scope": "Contact page"
     },
     {
       "index": "04",
@@ -258,15 +300,16 @@
       ],
       "featured": false,
       "badges": [
-        "Design"
+        "Design",
+        "Manufacturing"
       ],
-      "copy": "A hygiene products site where the design was my job. I did the layout, type and spacing, built it in Next.js and Tailwind, and added the contact form.",
+      "copy": "A website for a wet wipes manufacturer. I designed the website and built the Contact Us page using Next.js and Tailwind CSS.",
       "stack": [
         "Next.js",
         "Tailwind",
         "UI design"
       ],
-      "scope": "Design + Frontend"
+      "scope": "Design + Contact page"
     },
     {
       "index": "05",
@@ -274,10 +317,9 @@
       "confidential": true,
       "badges": [
         "ERP",
-        "Pharma",
-        "Client work"
+        "Pharma"
       ],
-      "copy": "A pharma manufacturing ERP I helped build at Zyden: masters, inventory, production, quality control and accounting, plus a one-click sync that copies every accounting entry into Tally Prime. It's confidential client software, so I can't share a link or screenshots here.",
+      "copy": "Zyden's main product: an ERP for pharma, nutraceutical and ayurvedic manufacturers. I helped build the masters, inventory, production, QC and accounts modules, plus the one-click Tally Prime sync. Now I manage the project and make the TechCure video series.",
       "stack": [
         "React",
         "Node",
@@ -285,7 +327,7 @@
         "MongoDB",
         "Tally Prime"
       ],
-      "scope": "Client work"
+      "scope": "ERP software"
     }
   ],
   "stack": [
@@ -394,9 +436,17 @@
       ]
     },
     {
-      "layer": "Media",
+      "layer": "Content & media",
       "soft": false,
       "tools": [
+        [
+          "Remotion",
+          "remotion"
+        ],
+        [
+          "Claude",
+          "claude"
+        ],
         [
           "CapCut",
           "capcut"
@@ -424,7 +474,7 @@
           "postgresql"
         ],
         [
-          "Testing",
+          "Automated testing",
           "test"
         ],
         [
@@ -436,7 +486,7 @@
           "devops"
         ],
         [
-          "AIML",
+          "AI / ML",
           "ai"
         ],
         [
@@ -461,22 +511,198 @@
     },
     {
       "period": "Apr — Sep 2025",
-      "title": "Developer Intern",
+      "title": "Full Stack Developer Intern",
       "org": "Zyden IT Solutions · Internship",
       "copy": [
         "This is where I learned to build properly. HTML, CSS, JavaScript, React, Next.js, Tailwind, Node, MongoDB and MySQL, all picked up on real client work instead of tutorials. Three projects went out in six months.",
-        "I designed AM Hygiene and built its contact form. On Fortune Organics I did the design, the backend, and an admin panel with delivery tracking. On House of Fashion I did all of it: the design, the site, the admin panel and the API, plus order tracking and letting customers cancel, return or replace an order themselves."
+        "I designed AM Hygiene and built its Contact Us page. On Fortune Organics I did the design, the backend, and an admin panel with delivery tracking. On House of Fashion I worked on the design, the storefront, the admin panel and the API, including order tracking and letting customers cancel, return or replace an order themselves."
       ]
     },
     {
-      "period": "Oct 2025 — Current",
-      "title": "Full-stack Developer",
+      "period": "Oct 2025 — Feb 2026",
+      "title": "Full Stack Developer",
       "org": "Zyden IT Solutions · Full-time",
       "copy": [
         "I built 99 Spices from scratch. Order and food tracking, table booking, pre-orders, and an admin side where staff manage orders and see a dashboard with profit, loss and the numbers that matter. All three admin panels I worked on got that dashboard: 99 Spices, Fortune Organics and House of Fashion.",
-        "Then Tech-Cure, a pharma manufacturing ERP, from day one. I knew nothing about pharma when I started. My project leader, Dhruvi Patel, pushed me to go and research the domain properly, and that is what made everything after it possible.",
-        "I built the masters, the inventory and production modules, QC and the BMR reports, and the whole accounting engine. Every entry splits itself into balanced parts, so the trial balance and the balance sheet always match. Stock tracking follows every issue and receipt down to the smallest one. And the Tally sync: one click and every entry in Tech-Cure shows up in Tally Prime."
+        "Then TechCure, Zyden's ERP for pharma manufacturers, from day one. I knew nothing about pharma when I started. My project leader, Dhruvi Patel, pushed me to go and research the domain properly, and that is what made everything after it possible. I worked on the masters and the inventory module first."
+      ]
+    },
+    {
+      "period": "Mar — Sep 2026",
+      "title": "Senior Developer",
+      "org": "Zyden IT Solutions · Full-time",
+      "copy": [
+        "Then I worked on the production module, QC and the BMR reports, and helped build the accounting engine. Every entry splits itself into balanced parts, so the trial balance and the balance sheet always match.",
+        "I also helped build stock tracking that follows every issue and receipt, and the Tally sync: one click and every entry in TechCure shows up in Tally Prime."
+      ]
+    },
+    {
+      "period": "Oct 2026 — Current",
+      "title": "Project Manager",
+      "org": "Zyden IT Solutions · Full-time",
+      "copy": [
+        "I look after several projects now. I research what a feature needs, plan it with the team, and test it before it ships. I write and make the TechCure video series with Claude and Remotion, come up with ideas for our reels and create them, and I'm learning SEO and ads along the way."
       ]
     }
-  ]
+  ],
+  "stackScene": {
+    "products": [
+      {
+        "name": "Linen shirt",
+        "price": "₹1,499"
+      },
+      {
+        "name": "Denim jacket",
+        "price": "₹2,199"
+      },
+      {
+        "name": "Cotton kurta",
+        "price": "₹999"
+      }
+    ],
+    "collections": [
+      {
+        "name": "products",
+        "count": 24
+      },
+      {
+        "name": "users",
+        "count": 128
+      },
+      {
+        "name": "carts",
+        "count": 41
+      },
+      {
+        "name": "orders",
+        "count": 57
+      }
+    ],
+    "flows": [
+      {
+        "key": "products",
+        "method": "GET",
+        "path": "/api/products",
+        "file": "products.js",
+        "code": [
+          "router.get(\"/products\", async (req, res) => {",
+          "  const items = await Product",
+          "    .find({ live: true })",
+          "    .sort({ createdAt: -1 })",
+          "    .limit(12);",
+          "  res.json(items);",
+          "});"
+        ],
+        "db": [
+          1,
+          4
+        ],
+        "coll": "products",
+        "write": false,
+        "query": "products.find({ live: true })",
+        "dbRes": "12 docs",
+        "status": "200 OK",
+        "ms": 24
+      },
+      {
+        "key": "login",
+        "method": "POST",
+        "path": "/api/auth/login",
+        "file": "auth.js",
+        "code": [
+          "router.post(\"/auth/login\", async (req, res) => {",
+          "  const { email, pw } = req.body;",
+          "  const user = await User.findOne({ email });",
+          "  const ok = await bcrypt.compare(pw, user.hash);",
+          "  if (!ok) return res.status(401).end();",
+          "  const token = jwt.sign({ id: user._id }, KEY);",
+          "  res.json({ token });",
+          "});"
+        ],
+        "db": [
+          2,
+          2
+        ],
+        "coll": "users",
+        "write": false,
+        "query": "users.findOne({ email })",
+        "dbRes": "1 user",
+        "status": "200 · JWT",
+        "ms": 61
+      },
+      {
+        "key": "cart",
+        "method": "POST",
+        "path": "/api/cart",
+        "file": "cart.js",
+        "code": [
+          "router.post(\"/cart\", auth, async (req, res) => {",
+          "  const { productId, qty } = req.body;",
+          "  const cart = await Cart.findOneAndUpdate(",
+          "    { user: req.user.id },",
+          "    { $push: { items: { productId, qty } } },",
+          "    { new: true, upsert: true }",
+          "  );",
+          "  res.json(cart);",
+          "});"
+        ],
+        "db": [
+          2,
+          6
+        ],
+        "coll": "carts",
+        "write": true,
+        "query": "carts.findOneAndUpdate(…)",
+        "dbRes": "1 updated",
+        "status": "200 OK",
+        "ms": 38
+      },
+      {
+        "key": "orders",
+        "method": "POST",
+        "path": "/api/orders",
+        "file": "orders.js",
+        "code": [
+          "router.post(\"/orders\", auth, async (req, res) => {",
+          "  const { amount } = req.body;",
+          "  const rzp = await razorpay.orders.create({",
+          "    amount, currency: \"INR\",",
+          "  });",
+          "  const order = await Order.create({",
+          "    user: req.user.id, rzp: rzp.id, amount,",
+          "  });",
+          "  res.status(201).json(order);",
+          "});"
+        ],
+        "db": [
+          5,
+          7
+        ],
+        "coll": "orders",
+        "write": true,
+        "query": "orders.insertOne(…)",
+        "dbRes": "1 inserted",
+        "status": "201 Created",
+        "ms": 212
+      }
+    ],
+    "docs": {
+      "products": [
+        "{ _id: ObjectId(\"66f2…a4\"),\n  name: \"Linen shirt\",\n  price: 1499, live: true }",
+        "{ _id: ObjectId(\"66f2…b7\"),\n  name: \"Denim jacket\",\n  price: 2199, live: true }"
+      ],
+      "users": [
+        "{ _id: ObjectId(\"66e1…7b\"),\n  email: \"harshil@…\",\n  role: \"customer\" }",
+        "{ _id: ObjectId(\"66e1…c2\"),\n  email: \"riya@…\",\n  role: \"admin\" }"
+      ],
+      "carts": [
+        "{ _id: ObjectId(\"66f3…09\"),\n  user: ObjectId(\"66e1…7b\"),\n  items: [ 3 ] }",
+        "{ _id: ObjectId(\"66f3…5e\"),\n  user: ObjectId(\"66e1…c2\"),\n  items: [ 1 ] }"
+      ],
+      "orders": [
+        "{ _id: ObjectId(\"66f9…e2\"),\n  rzp: \"order_P8x…\",\n  amount: 369800, status: \"paid\" }",
+        "{ _id: ObjectId(\"66f9…71\"),\n  rzp: \"order_P7k…\",\n  amount: 99900, status: \"paid\" }"
+      ]
+    }
+  }
 }

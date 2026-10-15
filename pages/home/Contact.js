@@ -72,9 +72,9 @@ const Contact = () => {
             </h2>
 
             <p className="lede">
-              I&rsquo;m open to full-time roles and to project work, whether that&rsquo;s a
-              whole build, just the front end, or an API someone needs finishing. Tell me
-              what you&rsquo;re working on and I&rsquo;ll get back to you within a day.
+              Planning a website, an app or a video? Or stuck on a project and want some
+              guidance? Tell me what you have in mind, and let&rsquo;s work out what to build.
+              I&rsquo;ll get back to you within a day.
             </p>
 
             <div className="iconbtns">

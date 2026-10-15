@@ -2,6 +2,7 @@ import React from "react";
 import MetaData from "@/components/common/metaData/MetaData";
 import Hero from "./Hero";
 import Ticker from "./Ticker";
+import StackBand from "./StackBand";
 import About from "./About";
 import Expertise from "./Expertise";
 import Work from "./Work";
@@ -17,6 +18,7 @@ function Home() {
       <MetaData />
       <Hero />
       <Ticker />
+      <StackBand />
       <About />
       <Rule />
       <Expertise />

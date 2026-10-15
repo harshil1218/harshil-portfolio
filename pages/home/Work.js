@@ -17,9 +17,8 @@ const Work = () => {
             <div>
               <h2><span className="ln"><span>Selected projects</span></span></h2>
               <p className="lede">
-                Five projects, ten apps between them. Two are full builds with a
-                storefront, an admin panel and an API behind both, and one is
-                confidential client work.
+                Selected projects I worked on at Zyden IT Solutions, across
+                e-commerce, business websites and pharma ERP software.
               </p>
             </div>
           </div>

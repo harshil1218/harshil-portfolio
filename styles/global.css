@@ -37,6 +37,21 @@
   --dot: rgba(11, 14, 20, .20);
   --dot-hot: rgba(11, 39, 240, .95);
 
+  /* 3D stack scene */
+  --slab: rgba(255, 255, 255, .87);
+  --slab-line: #D2DAE5;
+  --slab-edge: #DCE2EB;
+  --shade-ink: #0B0E14;
+  --floor-shadow: rgba(11, 14, 20, .16);
+  --floor-grid: rgba(11, 14, 20, .07);
+  --t-k: #0B27F0;
+  --t-f: #0077C8;
+  --t-s: #0B8A60;
+  --t-n: #B4530A;
+  --img-1: linear-gradient(140deg, #DDE6FF, #B4C6FF);
+  --img-2: linear-gradient(140deg, #D9F2FF, #9AD8FB);
+  --img-3: linear-gradient(140deg, #ECEFF5, #C8D0DD);
+
   --f-logo: "Exo", "Archivo", system-ui, sans-serif;
   --f-display: "Archivo", system-ui, sans-serif;
   --f-body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -85,6 +100,19 @@
     --err-soft: rgba(255, 144, 131, .10);
     --dot: rgba(237, 241, 247, .20);
     --dot-hot: rgba(90, 147, 255, .95);
+    --slab: rgba(18, 23, 31, .9);
+    --slab-line: #2A3544;
+    --slab-edge: #0F141B;
+    --shade-ink: #000;
+    --floor-shadow: rgba(0, 0, 0, .6);
+    --floor-grid: rgba(237, 241, 247, .06);
+    --t-k: #7FA6FF;
+    --t-f: #22B8FF;
+    --t-s: #4FD6A5;
+    --t-n: #FFB067;
+    --img-1: linear-gradient(140deg, #1C2A55, #2F5BFF);
+    --img-2: linear-gradient(140deg, #123247, #22B8FF);
+    --img-3: linear-gradient(140deg, #1A212B, #33404F);
   }
 }
 
@@ -112,6 +140,19 @@
   --err-soft: rgba(255, 144, 131, .10);
   --dot: rgba(237, 241, 247, .20);
   --dot-hot: rgba(90, 147, 255, .95);
+  --slab: rgba(18, 23, 31, .9);
+  --slab-line: #2A3544;
+  --slab-edge: #0F141B;
+  --shade-ink: #000;
+  --floor-shadow: rgba(0, 0, 0, .6);
+  --floor-grid: rgba(237, 241, 247, .06);
+  --t-k: #7FA6FF;
+  --t-f: #22B8FF;
+  --t-s: #4FD6A5;
+  --t-n: #FFB067;
+  --img-1: linear-gradient(140deg, #1C2A55, #2F5BFF);
+  --img-2: linear-gradient(140deg, #123247, #22B8FF);
+  --img-3: linear-gradient(140deg, #1A212B, #33404F);
 }
 
 /* ---------- base ---------- */
@@ -119,9 +160,12 @@
   box-sizing: border-box
 }
 
+/* no sideways scroll, ever — clip (unlike hidden) keeps the sticky rail labels working */
 html {
   -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-x: clip
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -139,6 +183,7 @@ body {
   line-height: 1.62;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img,

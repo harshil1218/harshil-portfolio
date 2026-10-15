@@ -71,7 +71,7 @@ const ProjectCard = ({ project, wide }) => {
           {project.index} &middot; {project.scope}
         </span>
         {project.confidential ? (
-          <span className="go go--off mono">Private &middot; NDA</span>
+          <span className="go go--off mono">In-house product</span>
         ) : (
           <a
             className="go mono"

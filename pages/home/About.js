@@ -38,9 +38,9 @@ const About = () => {
               <Image
                 src={data.profile.portrait}
                 alt="Harshil at his desk"
-                width={1000}
-                height={1250}
-                priority
+                width={2268}
+                height={4032}
+                unoptimized
               />
             </div>
             <div className="portrait__foot">

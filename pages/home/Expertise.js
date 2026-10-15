@@ -6,7 +6,7 @@ import LevelMeter from "@/components/common/levelMeter/LevelMeter";
 
 const LEGEND = [
   { level: 4, name: "Core", text: "I use it every day" },
-  { level: 3, name: "Working", text: "I can build with it alone" },
+  { level: 3, name: "Working", text: "I can do it on my own" },
   { level: 2, name: "Intermediate", text: "I get by, still learning" },
 ];
 

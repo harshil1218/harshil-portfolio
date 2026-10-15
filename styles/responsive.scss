@@ -146,4 +146,20 @@
    .layer {
       padding: 1rem 1.05rem
    }
+
+   /* 3D stack band: the request log sits above the stack */
+   .scene--band {
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-areas: "hud" "stage" "hint";
+      row-gap: .5rem
+   }
+
+   .scene--band .hud {
+      max-width: none
+   }
+
+   .scene--band .stage {
+      height: 310px;
+      margin-top: -.25rem
+   }
 }
