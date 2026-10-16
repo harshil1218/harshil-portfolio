@@ -1,13 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .ink { stroke: #0B0E14; fill: #0B0E14 }
+    @media (prefers-color-scheme: dark) { .ink { stroke: #EDF1F7; fill: #EDF1F7 } }
+  </style>
   <defs>
-    <linearGradient id="g" x1="0" y1="1" x2="1" y2="0">
+    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="4" y1="60" x2="60" y2="4">
       <stop offset="0" stop-color="#0B27F0"/>
       <stop offset="1" stop-color="#00A9F0"/>
     </linearGradient>
   </defs>
-  <g fill="none" stroke="url(#g)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M18 16 L4 32 L18 48"/>
-    <path d="M46 16 L60 32 L46 48"/>
-    <path d="M38 10 L26 54"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.5">
+    <path class="ink" d="M20 12 V52" fill="none"/>
+    <path d="M20 28 C20 37 44 33 44 43 V52" stroke="url(#g)"/>
   </g>
+  <circle class="ink" cx="20" cy="12" r="5.5" stroke="none"/>
+  <circle class="ink" cx="20" cy="52" r="5.5" stroke="none"/>
+  <circle cx="44" cy="52" r="5.5" fill="url(#g)"/>
 </svg>

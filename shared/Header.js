@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Sections } from "@/navigation/NavigationLib";
 import Wordmark from "@/components/brand/Wordmark";
+import BrandMark from "@/components/brand/BrandMark";
 import useTheme from "@/utils/useTheme";
 
 const Header = () => {
@@ -39,6 +40,7 @@ const Header = () => {
       <header className={`nav${stuck ? " stuck" : ""}`}>
         <div className="nav__in">
           <Link href="/#top" className="lockup" aria-label="harshil.dev — home">
+            <BrandMark />
             <Wordmark />
           </Link>
 

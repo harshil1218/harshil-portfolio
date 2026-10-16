@@ -205,7 +205,7 @@
     },
     {
       "title": "SEO & Ads",
-      "copy": "The newest thing I'm learning. I'm picking up SEO on live work for AM Hygiene, and I've started running ad campaigns, the same way I learned to code: on the job.",
+      "copy": "The newest thing I'm learning. I'm picking up SEO on live work for the TechCure marketing website, and I've started running ad campaigns, the same way I learned to code: on the job.",
       "tags": [
         "SEO",
         "Ad campaigns"
@@ -319,7 +319,7 @@
         "ERP",
         "Pharma"
       ],
-      "copy": "Zyden's main product: an ERP for pharma, nutraceutical and ayurvedic manufacturers. I helped build the masters, inventory, production, QC and accounts modules, plus the one-click Tally Prime sync. Now I manage the project and make the TechCure video series.",
+      "copy": "Zyden's main product: an ERP for pharma, nutraceutical and ayurvedic manufacturers. I helped build the masters, inventory, production, QC and accounts modules and the one-click Tally Prime sync, and built the year change functionality. Now I manage the project and make the TechCure video series.",
       "stack": [
         "React",
         "Node",
@@ -533,7 +533,8 @@
       "org": "Zyden IT Solutions · Full-time",
       "copy": [
         "Then I worked on the production module, QC and the BMR reports, and helped build the accounting engine. Every entry splits itself into balanced parts, so the trial balance and the balance sheet always match.",
-        "I also helped build stock tracking that follows every issue and receipt, and the Tally sync: one click and every entry in TechCure shows up in Tally Prime."
+        "Stock tracking follows every issue and receipt, and the Tally sync puts every TechCure entry into Tally Prime in one click. I helped build both.",
+        "I also built the year change functionality, which closes one financial year, carries every balance forward into the next, and locks the old year."
       ]
     },
     {
