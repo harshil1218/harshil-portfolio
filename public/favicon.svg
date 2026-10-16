@@ -1,28 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- follows the browser's own light/dark setting: dark ink on light, light ink on dark -->
-  <style>
-    .ink-s { stroke: #0B0E14 }
-    .ink-f { fill: #0B0E14 }
-    .g1 { stop-color: #0B27F0 }
-    .g2 { stop-color: #00A9F0 }
-    @media (prefers-color-scheme: dark) {
-      .ink-s { stroke: #EDF1F7 }
-      .ink-f { fill: #EDF1F7 }
-      .g1 { stop-color: #2F5BFF }
-      .g2 { stop-color: #22B8FF }
-    }
-  </style>
+  <!-- light site theme: dark ink. The dark theme swaps in favicon-dark.svg -->
   <defs>
     <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="4" y1="60" x2="60" y2="4">
-      <stop class="g1" offset="0"/>
-      <stop class="g2" offset="1"/>
+      <stop offset="0" stop-color="#0B27F0"/>
+      <stop offset="1" stop-color="#00A9F0"/>
     </linearGradient>
   </defs>
   <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.5">
-    <path class="ink-s" d="M20 12 V52"/>
+    <path d="M20 12 V52" stroke="#0B0E14"/>
     <path d="M20 28 C20 37 44 33 44 43 V52" stroke="url(#g)"/>
   </g>
-  <circle class="ink-f" cx="20" cy="12" r="5.5"/>
-  <circle class="ink-f" cx="20" cy="52" r="5.5"/>
+  <circle cx="20" cy="12" r="5.5" fill="#0B0E14"/>
+  <circle cx="20" cy="52" r="5.5" fill="#0B0E14"/>
   <circle cx="44" cy="52" r="5.5" fill="url(#g)"/>
 </svg>
