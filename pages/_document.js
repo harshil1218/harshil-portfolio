@@ -3,10 +3,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 /**
  * The theme stamp has to land before first paint, otherwise a visitor who
  * picked dark gets a white flash on every navigation. This runs blocking,
- * ahead of React. It also picks the matching tab icon: a dark mark on the
- * light theme, a light mark on the dark one. (An SVG icon's own
- * prefers-color-scheme follows the OS, not the browser's tab colour, so the
- * site theme is the dependable signal.)
+ * ahead of React.
  */
 const themeScript = `
 (function(){
@@ -16,8 +13,6 @@ const themeScript = `
     if (s === "dark" || s === "light") t = s;
   } catch (e) {}
   document.documentElement.setAttribute("data-theme", t);
-  var icon = document.querySelector('link[rel="icon"][type="image/svg+xml"]');
-  if (icon) icon.href = t === "dark" ? "/favicon-dark.svg" : "/favicon.svg";
 })();
 `;
 
